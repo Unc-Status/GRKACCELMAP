@@ -13,7 +13,7 @@ class GrkAccelTable
 
    const GrkAccelTable& GrkAccelConnectWindow(const GrkWindow& window, bool once);
    const void GrkAccelConnectKey(const GrkAccelTable& table, const std::string& key);
-
+   const GrkAccelTable& GrkAccelDisconnectTable(const GrkWindow& window);
    virtual void accelSignal() = 0;
 
 };
