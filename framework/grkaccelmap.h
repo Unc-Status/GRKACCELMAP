@@ -8,6 +8,8 @@ typedef _GRKACCELTABLE GRKACCELTABLE;
 
 GRKACCELTABLE GrkAcceleratorConnectMainWindow(GrkWindow& window, bool once);
 
+void GrkFreeAcceleratorTable(GRKACCELTABLE& table);
+void GrkFreeAcceleratorKey(const char* key);
 void GrkAcceleratorAddKey(GRKACCELTABLE& accel, const char* key);
 
 #endif
