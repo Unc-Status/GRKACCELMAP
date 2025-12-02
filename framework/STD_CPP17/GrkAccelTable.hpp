@@ -12,6 +12,9 @@ class GrkAccelTable
       virtual ~GrkAccelTable();
 
    const GrkAccelTable& GrkAccelConnectWindow(const GrkWindow& window, bool once);
+   const void GrkAccelConnectKey(const GrkAccelTable& table, const std::string& key);
+
+   virtual void AccelSignal() = 0;
 
 };
 
